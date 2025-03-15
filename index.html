@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Countdown Alarm</title>
+</head>
+<body style="
+    font-family: Arial, sans-serif; 
+    text-align: center; 
+    background: linear-gradient(to bottom, #0058A3 50%, #FFCC00 50%);
+    color: white;
+    height: 100vh; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    margin: 0;
+">
+    <div style="
+        background-color: rgba(0, 0, 0, 0.7); 
+        padding: 20px; 
+        border-radius: 10px; 
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    ">
+        <h1 style="font-size: 32px; font-weight: bold; color: #FFCC00;">Set Your Alarm</h1>
+        
+        <div style="display: flex; align-items: center; gap: 10px; justify-content: center;">
+            <input type="number" id="hoursInput" min="0" placeholder="Hours" style="
+                padding: 10px; 
+                font-size: 16px; 
+                border-radius: 5px; 
+                border: 2px solid #FFCC00; 
+                background-color: white; 
+                color: black;
+                width: 80px;
+                text-align: center;
+            ">
+            
+            <input type="number" id="minutesInput" min="0" max="59" placeholder="Minutes" style="
+                padding: 10px; 
+                font-size: 16px; 
+                border-radius: 5px; 
+                border: 2px solid #FFCC00; 
+                background-color: white; 
+                color: black;
+                width: 80px;
+                text-align: center;
+            ">
+        </div>
+
+        <button onclick="setAlarm()" style="
+            margin-top: 15px; 
+            padding: 10px; 
+            font-size: 16px; 
+            border-radius: 5px; 
+            border: none; 
+            background-color: #FFCC00; 
+            color: #0058A3; 
+            font-weight: bold; 
+            cursor: pointer;
+        ">Start Alarm</button>
+
+        <p id="status"></p>
+        <p id="fakeCountdown" style="font-size: 20px; font-weight: bold;"></p>
+    </div>
+
+    <script>
+        
+    </script>
+</body>
+</html>
